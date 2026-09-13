@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Husain Web Studio | Web Development &amp; Digital Experiences</title>
+<meta name="description" content="Modern websites, web applications and AI-powered digital solutions designed for businesses, creators and ambitious brands." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.husainwebstudio.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Husain Web Studio | Web Development & Digital Experiences" />
+<meta property="og:description" content="Modern websites, web applications and AI-powered digital solutions designed for businesses, creators and ambitious brands." />
+<meta property="og:url" content="https://www.husainwebstudio.com/" />
+<meta property="og:site_name" content="Husain Web Studio" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Husain Web Studio | Web Development & Digital Experiences" />
+<meta name="twitter:description" content="Modern websites, web applications and AI-powered digital solutions designed for businesses, creators and ambitious brands." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234F46E5'/%3E%3Cstop offset='1' stop-color='%237C3AED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='22' width='100' height='100' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' fill='white' text-anchor='middle' font-weight='700'%3EH%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Husain Web Studio",
+  "description": "Modern websites, web applications and AI-powered digital solutions.",
+  "url": "https://www.husainwebstudio.com/",
+  "priceRange": "₹1,999 - ₹4,999",
+  "areaServed": "Worldwide"
+}
+</script>
+
+<style>
+  :root{
+    --bg: #FAFAF8;
+    --bg-alt: #F3F2EF;
+    --surface: #FFFFFF;
+    --ink: #15171C;
+    --ink-soft: #4B4F58;
+    --ink-mute: #82858F;
+    --line: rgba(21,23,28,0.09);
+    --line-soft: rgba(21,23,28,0.06);
+    --accent: #c6e8ca;
+    --accent-2: #7B5CF0;
+    --accent-blue: #2E6BFF;
+    --accent-soft: rgba(74,63,224,0.08);
+    --shadow-sm: 0 1px 2px rgba(21,23,28,0.04), 0 1px 1px rgba(21,23,28,0.03);
+    --shadow-md: 0 12px 32px -12px rgba(21,23,28,0.14);
+    --shadow-lg: 0 24px 64px -20px rgba(21,23,28,0.22);
+    --radius-s: 10px;
+    --radius-m: 16px;
+    --radius-l: 24px;
+    --maxw: 1200px;
+    --font-display: 'Manrope', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+  h1,h2,h3,h4{font-family:var(--font-display); margin:0; color:var(--ink); letter-spacing:-0.02em;}
+  p{margin:0;}
+  ul{margin:0; padding:0; list-style:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  section{position:relative;}
+  .visually-hidden{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
+
+  :focus-visible{
+    outline:2.5px solid var(--accent);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:13px 26px;
+    border-radius:100px;
+    font-weight:600;
+    font-size:15px;
+    border:1px solid transparent;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg, var(--accent), var(--accent-2));
+    color:#fff;
+    box-shadow:0 8px 20px -8px rgba(74,63,224,0.55);
+  }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 14px 28px -10px rgba(74,63,224,0.6); }
+  .btn-secondary{
+    background:var(--surface);
+    color:var(--ink);
+    border:1px solid var(--line);
+  }
+  .btn-secondary:hover{ border-color:rgba(21,23,28,0.22); transform:translateY(-2px); }
+  .btn-ghost{
+    background:transparent;
+    color:var(--ink);
+    border:1px solid var(--line);
+  }
+  .btn-ghost:hover{ background:var(--bg-alt); }
+  .btn-sm{ padding:10px 18px; font-size:14px; }
+  .btn-block{ width:100%; }
+
+  /* ---------- Section heading pattern ---------- */
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-kicker{
+    font-size:13.5px; font-weight:600; color:var(--accent);
+    margin-bottom:14px; display:block;
+  }
+  .section-head h2{ font-size:clamp(28px, 4vw, 42px); line-height:1.15; }
+  .section-head p{ margin-top:16px; color:var(--ink-soft); font-size:17px; }
+
+  /* ================= NAVBAR ================= */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:18px 0;
+    transition:background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease, padding .35s ease, border-color .35s ease;
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    background:rgba(250,250,248,0.72);
+    backdrop-filter:blur(16px) saturate(160%);
+    -webkit-backdrop-filter:blur(16px) saturate(160%);
+    border-bottom:1px solid var(--line);
+    padding:12px 0;
+    box-shadow:0 8px 24px -16px rgba(21,23,28,0.12);
+  }
+  .nav-row{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:800; font-size:18px; }
+  .brand-mark{
+    width:32px; height:32px; border-radius:9px;
+    background:linear-gradient(135deg, var(--accent), var(--accent-2));
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:15px; font-weight:800;
+    box-shadow:0 6px 14px -6px rgba(74,63,224,0.6);
+  }
+  .nav-links{ display:flex; align-items:center; gap:34px; }
+  .nav-links a{
+    font-size:14.5px; font-weight:500; color:var(--ink-soft);
+    position:relative; padding:4px 0; transition:color .2s ease;
+  }
+  .nav-links a::after{
+    content:''; position:absolute; left:0; right:0; bottom:-2px; height:1.5px;
+    background:var(--ink); transform:scaleX(0); transform-origin:right; transition:transform .3s ease;
+  }
+  .nav-links a:hover{ color:var(--ink); }
+  .nav-links a:hover::after{ transform:scaleX(1); transform-origin:left; }
+  .nav-cta{ display:flex; align-items:center; gap:14px; }
+  .nav-toggle{
+    display:none; background:none; border:1px solid var(--line); border-radius:10px;
+    width:42px; height:42px; align-items:center; justify-content:center;
+  }
+  .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{
+    content:''; display:block; width:18px; height:1.6px; background:var(--ink);
+    position:relative; transition:transform .25s ease, opacity .25s ease;
+  }
+  .nav-toggle span::before{ position:absolute; top:-6px; }
+  .nav-toggle span::after{ position:absolute; top:6px; }
+  .nav-toggle.open span{ background:transparent; }
+  .nav-toggle.open span::before{ top:0; transform:rotate(45deg); background:var(--ink); }
+  .nav-toggle.open span::after{ top:0; transform:rotate(-45deg); background:var(--ink); }
+
+  .mobile-menu{
+    display:none; position:fixed; top:0; right:0; bottom:0; width:min(84vw, 360px);
+    background:var(--surface); z-index:99; box-shadow:-24px 0 48px -20px rgba(21,23,28,0.25);
+    padding:100px 28px 40px; transform:translateX(100%); transition:transform .38s cubic-bezier(.65,0,.35,1);
+    flex-direction:column; gap:6px; overflow-y:auto;
+  }
+  .mobile-menu.open{ transform:translateX(0); }
+  .mobile-menu a{ display:block; padding:14px 4px; font-size:17px; font-weight:600; border-bottom:1px solid var(--line-soft); }
+  .menu-scrim{
+    display:none; position:fixed; inset:0; background:rgba(21,23,28,0.35); z-index:98;
+    opacity:0; transition:opacity .35s ease;
+  }
+  .menu-scrim.open{ display:block; opacity:1; }
+
+  @media (max-width:920px){
+    .nav-links{ display:none; }
+    .nav-cta .btn-secondary{ display:none; }
+    .nav-toggle{ display:flex; }
+    .mobile-menu, .menu-scrim{ display:flex; }
+    .menu-scrim{ display:block; }
+  }
+
+  /* ================= HERO ================= */
+  .hero{
+    padding:168px 0 110px;
+    background:
+      radial-gradient(60% 50% at 82% 8%, rgba(74,63,224,0.10), transparent 60%),
+      radial-gradient(45% 40% at 8% 18%, rgba(46,107,255,0.08), transparent 60%),
+      var(--bg);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; font-weight:600; color:var(--accent);
+    background:var(--accent-soft); border:1px solid rgba(74,63,224,0.16);
+    padding:7px 14px; border-radius:100px; margin-bottom:24px;
+  }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent); }
+  .hero h1{
+    font-size:clamp(36px, 5.4vw, 60px); line-height:1.06; font-weight:800; max-width:620px;
+    opacity:0; transform:translateY(16px); animation:heroIn .8s ease forwards;
+  }
+  .hero-copy{
+    margin-top:22px; font-size:18px; color:var(--ink-soft); max-width:520px; line-height:1.65;
+    opacity:0; transform:translateY(14px); animation:heroIn .8s ease .12s forwards;
+  }
+  .hero-ctas{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap;
+    opacity:0; transform:translateY(14px); animation:heroIn .8s ease .22s forwards;
+  }
+  .hero-trust{
+    margin-top:30px; font-size:13.5px; color:var(--ink-mute); font-weight:500;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    opacity:0; animation:heroIn .8s ease .32s forwards;
+  }
+  .hero-trust span{ display:flex; align-items:center; gap:10px; }
+  .hero-trust .sep{ width:3px; height:3px; border-radius:50%; background:var(--ink-mute); }
+  @keyframes heroIn{ to{ opacity:1; transform:translateY(0); } }
+
+  /* Hero visual: layered browser mockup */
+  .hero-visual{
+    position:relative; height:460px;
+    opacity:0; transform:translateY(20px) scale(.98); animation:heroIn .9s ease .2s forwards;
+  }
+  .mock-card{
+    position:absolute; border-radius:18px; background:var(--surface);
+    border:1px solid var(--line); box-shadow:var(--shadow-lg); overflow:hidden;
+  }
+  .mock-back{
+    width:88%; height:340px; top:10px; right:0;
+    background:linear-gradient(155deg, #EFEBFF, #E7F0FF);
+    border:1px solid rgba(74,63,224,0.14);
+  }
+  .mock-front{
+    width:92%; height:300px; left:0; bottom:0;
+    backdrop-filter:blur(18px) saturate(160%);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    background:rgba(255,255,255,0.72);
+    border:1px solid rgba(255,255,255,0.6);
+  }
+  .mock-topbar{ display:flex; align-items:center; gap:6px; padding:14px 18px; border-bottom:1px solid var(--line-soft); }
+  .mock-topbar i{ width:9px; height:9px; border-radius:50%; background:#DADCE3; }
+  .mock-topbar .url{
+    margin-left:10px; flex:1; height:22px; border-radius:7px; background:var(--bg-alt);
+    font-size:11px; color:var(--ink-mute); display:flex; align-items:center; padding:0 10px;
+  }
+  .mock-body{ padding:22px; display:flex; flex-direction:column; gap:12px; }
+  .mock-line{ height:12px; border-radius:6px; background:var(--bg-alt); }
+  .mock-line.w60{ width:60%; }
+  .mock-line.w40{ width:40%; }
+  .mock-line.w90{ width:90%; }
+  .mock-tiles{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:6px; }
+  .mock-tile{ height:56px; border-radius:10px; background:linear-gradient(135deg, rgba(74,63,224,0.14), rgba(46,107,255,0.10)); border:1px solid var(--line-soft); }
+  .float-chip{
+    position:absolute; padding:11px 16px; border-radius:14px;
+    background:rgba(255,255,255,0.85); backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.7); box-shadow:var(--shadow-md);
+    font-size:13px; font-weight:600; display:flex; align-items:center; gap:8px;
+  }
+  .float-chip.c1{ top:6%; left:-2%; color:#2E6BFF; }
+  .float-chip.c2{ bottom:8%; right:-3%; color:#4A3FE0; }
+  .float-chip .pulse{ width:7px; height:7px; border-radius:50%; background:#2FB86E; box-shadow:0 0 0 3px rgba(47,184,110,0.18); }
+
+  @media (max-width:980px){
+    .hero{ padding:140px 0 70px; }
+    .hero-grid{ grid-template-columns:1fr; gap:52px; }
+    .hero h1{ max-width:none; }
+    .hero-copy{ max-width:none; }
+    .hero-visual{ height:360px; order:-1; }
+    .mock-back, .mock-front{ width:100%; }
+  }
+
+  /* ================= TECH STRIP ================= */
+  .tech-strip{ padding:38px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); background:var(--bg-alt); }
+  .tech-row{ display:flex; align-items:center; justify-content:center; gap:44px; flex-wrap:wrap; }
+  .tech-row span{ font-size:13.5px; font-weight:600; color:var(--ink-mute); letter-spacing:0.01em; }
+
+  /* ================= SERVICES ================= */
+  .services{ padding:120px 0; }
+  .service-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .service-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-m);
+    padding:30px 26px; box-shadow:var(--shadow-sm);
+    transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .service-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-md); border-color:rgba(74,63,224,0.22); }
+  .service-num{ font-size:13px; font-weight:700; color:var(--accent); margin-bottom:18px; }
+  .service-icon{
+    width:44px; height:44px; border-radius:12px; margin-bottom:18px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .service-card h3{ font-size:19px; font-weight:700; margin-bottom:10px; }
+  .service-card p{ color:var(--ink-soft); font-size:15px; line-height:1.6; }
+
+  @media (max-width:900px){ .service-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .service-grid{ grid-template-columns:1fr; } }
+
+  /* ================= FEATURED WORK ================= */
+  .work{ padding:120px 0; background:var(--bg-alt); }
+  .work-grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  .work-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l);
+    overflow:hidden; box-shadow:var(--shadow-sm); transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .work-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+  .work-preview{
+    height:220px; position:relative; overflow:hidden;
+    background:linear-gradient(150deg, #EDEBFC, #E5F0FF);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .work-preview .wp-topbar{ display:flex; gap:5px; padding:12px 14px; }
+  .work-preview .wp-topbar i{ width:7px; height:7px; border-radius:50%; background:rgba(21,23,28,0.16); }
+  .work-preview .wp-body{ padding:0 20px; display:flex; flex-direction:column; gap:9px; }
+  .work-preview .wp-line{ height:9px; border-radius:5px; background:rgba(255,255,255,0.75); }
+  .work-preview .wp-block{ height:70px; border-radius:10px; background:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.7); margin-top:6px; }
+  .work-meta{ padding:26px; }
+  .work-cat{ font-size:12.5px; font-weight:600; color:var(--accent); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:8px; }
+  .work-meta h3{ font-size:20px; font-weight:700; margin-bottom:8px; }
+  .work-meta p{ color:var(--ink-soft); font-size:14.5px; margin-bottom:16px; }
+  .work-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px; }
+  .work-tags span{ font-size:12px; font-weight:600; color:var(--ink-soft); background:var(--bg-alt); border:1px solid var(--line); padding:5px 10px; border-radius:100px; }
+  .work-card .work-tags span{ background:var(--bg); }
+  .work-link{ font-size:14px; font-weight:600; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+  .work-link svg{ transition:transform .2s ease; }
+  .work-card:hover .work-link svg{ transform:translateX(3px); }
+  .concept-tag{ display:inline-block; margin-top:14px; font-size:12px; color:var(--ink-mute); font-style:italic; }
+
+  @media (max-width:880px){ .work-grid{ grid-template-columns:1fr; } }
+
+  /* ================= WHY CHOOSE US (editorial) ================= */
+  .why{ padding:120px 0; }
+  .why-layout{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:start; }
+  .why-list{ display:flex; flex-direction:column; }
+  .why-item{ padding:30px 0; border-top:1px solid var(--line); display:grid; grid-template-columns:56px 1fr; gap:20px; }
+  .why-list .why-item:last-child{ border-bottom:1px solid var(--line); }
+  .why-num{ font-family:var(--font-display); font-size:15px; font-weight:700; color:var(--ink-mute); padding-top:2px; }
+  .why-item h3{ font-size:20px; font-weight:700; margin-bottom:8px; }
+  .why-item p{ color:var(--ink-soft); font-size:15px; line-height:1.6; max-width:440px; }
+  .why-visual{
+    border-radius:var(--radius-l); overflow:hidden; position:sticky; top:120px;
+    background:linear-gradient(160deg, #17182A, #2A1F55 55%, #4A3FE0);
+    min-height:460px; padding:38px; display:flex; flex-direction:column; justify-content:space-between;
+    box-shadow:var(--shadow-lg);
+  }
+  .why-visual .wv-top{ display:flex; justify-content:space-between; align-items:flex-start; }
+  .why-visual .wv-badge{ font-size:12px; color:rgba(255,255,255,0.7); font-weight:600; border:1px solid rgba(255,255,255,0.2); padding:6px 12px; border-radius:100px; }
+  .why-visual .wv-dot{ width:9px; height:9px; border-radius:50%; background:#7CF29C; box-shadow:0 0 0 5px rgba(124,242,156,0.14); }
+  .why-visual h4{ color:#fff; font-size:26px; line-height:1.3; font-weight:700; max-width:320px; }
+  .why-visual .wv-meta{ color:rgba(255,255,255,0.6); font-size:13px; }
+
+  @media (max-width:920px){
+    .why-layout{ grid-template-columns:1fr; }
+    .why-visual{ position:static; min-height:280px; order:-1; }
+  }
+
+  /* ================= PROCESS ================= */
+  .process{ padding:120px 0; background:var(--bg-alt); }
+  .timeline{ display:flex; flex-direction:column; }
+  .tl-step{ display:grid; grid-template-columns:64px 1fr; gap:24px; }
+  .tl-marker{ display:flex; flex-direction:column; align-items:center; }
+  .tl-num{
+    width:44px; height:44px; border-radius:50%; background:var(--surface); border:1.5px solid var(--line);
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:14px; color:var(--ink);
+    flex-shrink:0;
+  }
+  .tl-step:first-child .tl-num{ background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-color:transparent; }
+  .tl-line{ width:1.5px; flex:1; background:var(--line); margin:6px 0; min-height:34px; }
+  .tl-content{ padding-bottom:44px; }
+  .tl-step:last-child .tl-content{ padding-bottom:0; }
+  .tl-content h3{ font-size:19px; font-weight:700; margin-bottom:6px; }
+  .tl-content p{ color:var(--ink-soft); font-size:15px; }
+
+  /* ================= PRICING ================= */
+  .pricing{ padding:120px 0; }
+  .pricing-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch; }
+  .price-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l);
+    padding:34px 28px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm);
+    position:relative; transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .price-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
+  .price-card.featured{
+    background:linear-gradient(180deg, #FFFFFF, #FAF9FF);
+    border:1.5px solid rgba(74,63,224,0.4);
+    box-shadow:var(--shadow-lg);
+    transform:scale(1.03);
+  }
+  .price-card.featured:hover{ transform:scale(1.03) translateY(-4px); }
+  .price-badge{
+    position:absolute; top:-13px; left:28px; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    color:#fff; font-size:11.5px; font-weight:700; padding:6px 14px; border-radius:100px; letter-spacing:0.03em;
+    box-shadow:0 6px 14px -6px rgba(74,63,224,0.6);
+  }
+  .price-name{ font-size:14px; font-weight:700; color:var(--ink-mute); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:14px; }
+  .price-amount{ font-family:var(--font-display); font-size:38px; font-weight:800; margin-bottom:6px; }
+  .price-amount sup{ font-size:16px; font-weight:600; margin-right:2px; }
+  .price-tagline{ color:var(--ink-soft); font-size:14.5px; margin-bottom:6px; }
+  .price-for{ font-size:13px; color:var(--ink-mute); margin-bottom:22px; }
+  .price-divider{ height:1px; background:var(--line); margin-bottom:22px; }
+  .price-features{ display:flex; flex-direction:column; gap:11px; margin-bottom:28px; flex:1; }
+  .price-features li{ display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--ink-soft); line-height:1.5; }
+  .price-features svg{ flex-shrink:0; margin-top:3px; color:var(--accent); }
+  .price-sub{ font-size:12.5px; color:var(--ink-mute); margin-top:14px; }
+
+  @media (max-width:980px){
+    .pricing-grid{ grid-template-columns:1fr; max-width:440px; margin:0 auto; }
+    .price-card.featured{ transform:none; order:-1; }
+    .price-card.featured:hover{ transform:translateY(-4px); }
+  }
+
+  .pricing-note{
+    margin-top:52px; background:var(--bg-alt); border:1px solid var(--line); border-radius:var(--radius-m);
+    padding:30px 32px;
+  }
+  .pricing-note h4{ font-size:16px; font-weight:700; margin-bottom:14px; }
+  .pricing-note-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .pricing-note ul{ display:flex; flex-direction:column; gap:9px; }
+  .pricing-note li{ font-size:14px; color:var(--ink-soft); display:flex; gap:9px; }
+  .pricing-note li::before{ content:'—'; color:var(--ink-mute); flex-shrink:0; }
+  @media (max-width:700px){ .pricing-note-grid{ grid-template-columns:1fr; } }
+
+  /* ================= ABOUT ================= */
+  .about{ padding:120px 0; background:var(--bg-alt); }
+  .about-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:60px; align-items:center; }
+  .about-avatar{
+    aspect-ratio:1; border-radius:var(--radius-l);
+    background:linear-gradient(160deg,#EFEBFF,#DCE8FF);
+    border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-md); position:relative; overflow:hidden;
+  }
+  .about-avatar .initials{
+    width:104px; height:104px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    color:#fff; font-family:var(--font-display); font-size:40px; font-weight:800;
+    display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-lg);
+  }
+  .about-copy p{ font-size:17px; color:var(--ink-soft); line-height:1.75; margin-bottom:18px; }
+  .about-blocks{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:26px; }
+  .about-block{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-m); padding:20px 22px; }
+  .about-block h4{ font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-mute); margin-bottom:12px; }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chip-row span{ font-size:13px; font-weight:600; color:var(--ink); background:var(--bg-alt); border:1px solid var(--line); padding:5px 11px; border-radius:100px; }
+  .about-block .chip-row span{ background:var(--bg); }
+
+  @media (max-width:920px){ .about-grid{ grid-template-columns:1fr; } .about-avatar{ max-width:280px; margin:0 auto; } }
+
+  /* ================= WHY WORK WITH ME ================= */
+  .work-with{ padding:110px 0; }
+  .ww-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .ww-card{ padding:26px 22px; border-radius:var(--radius-m); border:1px solid var(--line); background:var(--surface); }
+  .ww-card svg{ color:var(--accent); margin-bottom:14px; }
+  .ww-card h4{ font-size:16px; font-weight:700; margin-bottom:8px; }
+  .ww-card p{ font-size:13.5px; color:var(--ink-soft); line-height:1.55; }
+  @media (max-width:900px){ .ww-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .ww-grid{ grid-template-columns:1fr; } }
+
+  /* ================= FAQ ================= */
+  .faq{ padding:110px 0; background:var(--bg-alt); }
+  .faq-list{ max-width:760px; margin:0 auto; }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%; background:none; border:none; text-align:left; padding:22px 4px;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    font-size:16.5px; font-weight:600; color:var(--ink);
+  }
+  .faq-q .plus{
+    width:26px; height:26px; border-radius:50%; border:1px solid var(--line); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; position:relative; transition:transform .3s ease, background .3s ease;
+  }
+  .faq-q .plus::before, .faq-q .plus::after{ content:''; position:absolute; background:var(--ink); transition:transform .3s ease, opacity .3s ease; }
+  .faq-q .plus::before{ width:10px; height:1.4px; }
+  .faq-q .plus::after{ width:1.4px; height:10px; }
+  .faq-item.open .faq-q .plus{ background:var(--ink); transform:rotate(180deg); }
+  .faq-item.open .faq-q .plus::before, .faq-item.open .faq-q .plus::after{ background:#fff; }
+  .faq-item.open .faq-q .plus::after{ opacity:0; }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .38s ease; }
+  .faq-a-inner{ padding:0 4px 22px; font-size:15px; color:var(--ink-soft); line-height:1.65; max-width:640px; }
+
+  /* ================= FINAL CTA ================= */
+  .final-cta{
+    padding:130px 0; text-align:center; position:relative; overflow:hidden;
+    background:
+      radial-gradient(60% 80% at 50% 0%, rgba(74,63,224,0.10), transparent 65%),
+      var(--bg);
+  }
+  .final-cta::before{
+    content:''; position:absolute; inset:0; margin:auto; width:520px; height:520px;
+    background:radial-gradient(circle, rgba(46,107,255,0.10), transparent 70%);
+    pointer-events:none;
+  }
+  .final-cta .inner{ position:relative; max-width:620px; margin:0 auto; }
+  .final-cta h2{ font-size:clamp(30px,5vw,48px); line-height:1.15; margin-bottom:18px; }
+  .final-cta p{ color:var(--ink-soft); font-size:17px; margin-bottom:36px; }
+
+  /* ================= CONTACT ================= */
+  .contact{ padding:120px 0; background:var(--bg-alt); }
+  .contact-grid{ display:grid; grid-template-columns:1fr 1.15fr; gap:56px; align-items:flex-start; }
+  .contact-info h2{ font-size:clamp(26px,3.6vw,36px); margin-bottom:16px; }
+  .contact-info p{ color:var(--ink-soft); font-size:16px; line-height:1.65; margin-bottom:28px; }
+  .contact-item{ display:flex; align-items:center; gap:12px; margin-bottom:16px; font-size:14.5px; font-weight:500; }
+  .contact-item .ci-icon{
+    width:38px; height:38px; border-radius:10px; background:var(--surface); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; color:var(--accent); flex-shrink:0;
+  }
+  .whatsapp-cta{
+    margin-top:22px; display:inline-flex; align-items:center; gap:10px; padding:13px 22px;
+    background:#1FAA59; color:#fff; border-radius:100px; font-weight:600; font-size:14.5px;
+    box-shadow:0 10px 24px -10px rgba(31,170,89,0.55); transition:transform .25s ease;
+  }
+  .whatsapp-cta:hover{ transform:translateY(-2px); }
+
+  .contact-form{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l);
+    padding:34px; box-shadow:var(--shadow-md);
+  }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .field{ margin-bottom:18px; display:flex; flex-direction:column; gap:7px; }
+  .field label{ font-size:13.5px; font-weight:600; color:var(--ink); }
+  .field input, .field select, .field textarea{
+    font-family:inherit; font-size:14.5px; padding:12px 14px; border-radius:10px;
+    border:1px solid var(--line); background:var(--bg); color:var(--ink); transition:border-color .2s ease, box-shadow .2s ease;
+    width:100%;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none; border-color:var(--accent); box-shadow:0 0 0 4px rgba(74,63,224,0.12);
+  }
+  .field textarea{ resize:vertical; min-height:110px; }
+  .field.error input, .field.error select, .field.error textarea{ border-color:#E24545; box-shadow:0 0 0 4px rgba(226,69,69,0.1); }
+  .field-error{ font-size:12.5px; color:#D33; display:none; }
+  .field.error .field-error{ display:block; }
+  .form-success{
+    display:none; text-align:center; padding:30px 10px; align-items:center; flex-direction:column; gap:14px;
+  }
+  .form-success.show{ display:flex; }
+  .form-success svg{ color:#1FAA59; }
+  .form-success h4{ font-size:18px; font-weight:700; }
+  .form-success p{ color:var(--ink-soft); font-size:14.5px; }
+  @media (max-width:920px){ .contact-grid{ grid-template-columns:1fr; } }
+  @media (max-width:560px){ .form-row{ grid-template-columns:1fr; } }
+
+  /* ================= FOOTER ================= */
+  footer{ padding:64px 0 32px; background:#121319; color:rgba(255,255,255,0.7); }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:44px; border-bottom:1px solid rgba(255,255,255,0.1); }
+  .footer-brand .brand{ color:#fff; }
+  .footer-brand .brand-mark{ box-shadow:none; }
+  .footer-brand p{ margin-top:14px; font-size:14px; line-height:1.6; max-width:260px; color:rgba(255,255,255,0.55); }
+  .footer-col h5{ color:#fff; font-size:13.5px; font-weight:700; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.03em; }
+  .footer-col ul{ display:flex; flex-direction:column; gap:11px; }
+  .footer-col a{ font-size:14px; color:rgba(255,255,255,0.6); transition:color .2s ease; }
+  .footer-col a:hover{ color:#fff; }
+  .footer-bottom{ padding-top:26px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:13px; color:rgba(255,255,255,0.45); }
+  .footer-legal{ display:flex; gap:20px; }
+  .footer-legal a{ color:rgba(255,255,255,0.45); }
+  .footer-legal a:hover{ color:#fff; }
+  @media (max-width:820px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .footer-grid{ grid-template-columns:1fr; } }
+
+  /* Reveal on scroll (single subtle system) */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<a href="#main" class="visually-hidden">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header id="site-header">
+  <div class="wrap nav-row">
+    <a href="#home" class="brand"><span class="brand-mark">H</span>Husain Web Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-secondary btn-sm">Start a Project</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-scrim" id="menuScrim"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary btn-block" style="margin-top:18px;">Start a Project</a>
+</nav>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>WEB DEVELOPMENT · DIGITAL EXPERIENCES · AI</span>
+        <h1>We build digital experiences that grow businesses.</h1>
+        <p class="hero-copy">Modern websites, web applications and AI-powered solutions designed to turn ideas into powerful digital products.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="#work" class="btn btn-secondary">View Our Work</a>
+        </div>
+        <div class="hero-trust">
+          <span>Responsive</span><span class="sep"></span>
+          <span>Fast</span><span class="sep"></span>
+          <span>Modern</span><span class="sep"></span>
+          <span>Built for Growth</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mock-card mock-back"></div>
+        <div class="mock-card mock-front">
+          <div class="mock-topbar"><i></i><i></i><i></i><span class="url">husainwebstudio.com</span></div>
+          <div class="mock-body">
+            <div class="mock-line w60"></div>
+            <div class="mock-line w90"></div>
+            <div class="mock-line w40"></div>
+            <div class="mock-tiles">
+              <div class="mock-tile"></div><div class="mock-tile"></div><div class="mock-tile"></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-chip c1"><span class="pulse"></span>Live preview</div>
+        <div class="float-chip c2">AI-ready ⚡</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STRIP ============ -->
+  <section class="tech-strip">
+    <div class="wrap tech-row">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Python</span><span>AI</span>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">Services</span>
+        <h2>Everything you need to build online.</h2>
+        <p>From a first website to a full digital product — every service is built with the same care.</p>
+      </div>
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
+          <h3>Website Development</h3>
+          <p>Modern, responsive websites designed around your business goals.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L21 7H6"/></svg></div>
+          <h3>E-Commerce</h3>
+          <p>Clean and user-friendly online stores built for a smooth shopping experience.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
+          <h3>Web Applications</h3>
+          <p>Interactive web applications, dashboards and digital tools.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5v2h8v-2c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/><path d="M9 18h6M10 21h4"/></svg></div>
+          <h3>AI Integration</h3>
+          <p>Practical AI-powered features integrated where they genuinely add value.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg></div>
+          <h3>UI/UX Design</h3>
+          <p>Clean, intuitive interfaces focused on usability and visual quality.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing updates, improvements and technical maintenance.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Featured Work</span>
+        <h2>Selected Work</h2>
+        <p>A look at concept and personal projects that show the quality and range of what we build.</p>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="work-card">
+          <div class="work-preview">
+            <div class="wp-topbar"><i></i><i></i><i></i></div>
+            <div class="wp-body">
+              <div class="wp-line" style="width:50%"></div>
+              <div class="wp-line" style="width:30%"></div>
+              <div class="wp-block"></div>
+            </div>
+          </div>
+          <div class="work-meta">
+            <div class="work-cat">AI-Powered Web Experience</div>
+            <h3>Husain CodeLab</h3>
+            <p>A concept developer-tools site exploring how AI-assisted features can sit naturally inside a clean, minimal interface.</p>
+            <div class="work-tags"><span>Next.js</span><span>AI</span><span>Design System</span></div>
+            <a href="#" class="work-link">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <span class="concept-tag">Concept project</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-preview">
+            <div class="wp-topbar"><i></i><i></i><i></i></div>
+            <div class="wp-body">
+              <div class="wp-line" style="width:60%"></div>
+              <div class="wp-line" style="width:40%"></div>
+              <div class="wp-block"></div>
+            </div>
+          </div>
+          <div class="work-meta">
+            <div class="work-cat">Business Website</div>
+            <h3>Local Business Concept Site</h3>
+            <p>A small-business concept built to convert visitors — clear services, pricing, and a straightforward contact path.</p>
+            <div class="work-tags"><span>React</span><span>Tailwind</span><span>SEO</span></div>
+            <a href="#" class="work-link">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <span class="concept-tag">Concept project</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-preview">
+            <div class="wp-topbar"><i></i><i></i><i></i></div>
+            <div class="wp-body">
+              <div class="wp-line" style="width:45%"></div>
+              <div class="wp-line" style="width:65%"></div>
+              <div class="wp-block"></div>
+            </div>
+          </div>
+          <div class="work-meta">
+            <div class="work-cat">Creative Portfolio</div>
+            <h3>Visual Portfolio Concept</h3>
+            <p>A gallery-first portfolio layout designed to let visual work take center stage without clutter.</p>
+            <div class="work-tags"><span>HTML/CSS</span><span>Motion</span></div>
+            <a href="#" class="work-link">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <span class="concept-tag">Concept project</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-preview">
+            <div class="wp-topbar"><i></i><i></i><i></i></div>
+            <div class="wp-body">
+              <div class="wp-line" style="width:55%"></div>
+              <div class="wp-line" style="width:35%"></div>
+              <div class="wp-block"></div>
+            </div>
+          </div>
+          <div class="work-meta">
+            <div class="work-cat">Web Application</div>
+            <h3>Dashboard / Web App Concept</h3>
+            <p>An internal-tool dashboard concept focused on clarity of data and fast day-to-day usability.</p>
+            <div class="work-tags"><span>React</span><span>TypeScript</span><span>Charts</span></div>
+            <a href="#" class="work-link">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <span class="concept-tag">Concept project</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Why Choose Us</span>
+        <h2>Built with design and technology in mind.</h2>
+      </div>
+      <div class="why-layout">
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div><h3>Modern Design</h3><p>Clean, premium interfaces designed to create trust.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div><h3>Performance</h3><p>Fast, responsive experiences that feel smooth to use.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div><h3>AI Ready</h3><p>Useful AI integrations where they actually improve the product.</p></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">04</div>
+            <div><h3>Built for Growth</h3><p>Scalable solutions designed to evolve with the business.</p></div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <div class="wv-top">
+            <span class="wv-badge">Performance</span>
+            <span class="wv-dot" aria-hidden="true"></span>
+          </div>
+          <div>
+            <h4>Every site is built to load fast and feel effortless.</h4>
+            <div class="wv-meta" style="margin-top:18px;">Optimized images · Clean code · Modern hosting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">Process</span>
+        <h2>From idea to launch.</h2>
+      </div>
+      <div class="timeline" style="max-width:640px; margin:0 auto;">
+        <div class="tl-step">
+          <div class="tl-marker"><div class="tl-num">01</div><div class="tl-line"></div></div>
+          <div class="tl-content"><h3>Discover</h3><p>Understand the business, audience and objectives.</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker"><div class="tl-num">02</div><div class="tl-line"></div></div>
+          <div class="tl-content"><h3>Design</h3><p>Create the visual direction and user experience.</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker"><div class="tl-num">03</div><div class="tl-line"></div></div>
+          <div class="tl-content"><h3>Develop</h3><p>Build the website or digital product with modern technology.</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker"><div class="tl-num">04</div><div class="tl-line"></div></div>
+          <div class="tl-content"><h3>Test</h3><p>Check responsiveness, usability, performance and functionality.</p></div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker"><div class="tl-num">05</div></div>
+          <div class="tl-content"><h3>Launch</h3><p>Deploy the finished product and make it ready for real users.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">Pricing</span>
+        <h2>Simple, honest pricing.</h2>
+        <p>Straightforward packages designed to be accessible — without cutting corners on quality.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="price-name">Starter</div>
+          <div class="price-amount"><sup>₹</sup>1,999</div>
+          <div class="price-tagline">Get your business online.</div>
+          <div class="price-for">Best for personal websites / small businesses</div>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1–2 pages</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Basic custom design</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mobile responsive, modern UI</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Limited glassmorphism &amp; basic animations</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Hero, services, about &amp; contact sections</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>WhatsApp button &amp; social links</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Favicon</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 revision</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary btn-block">Choose Starter</a>
+          <div class="price-sub">3–4 days delivery · 7 days support</div>
+        </div>
+
+        <div class="price-card featured">
+          <span class="price-badge">MOST POPULAR</span>
+          <div class="price-name">Professional</div>
+          <div class="price-amount"><sup>₹</sup>2,999</div>
+          <div class="price-tagline">Look professional. Grow faster.</div>
+          <div class="price-for">Best for growing businesses</div>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>3–5 pages, custom design</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Glassmorphism &amp; advanced animations</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Custom hero, contact form, Google Maps</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Portfolio/gallery &amp; testimonials section</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Basic SEO &amp; performance optimization</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Optional pricing section</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>2 revisions</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Choose Professional</a>
+          <div class="price-sub">4–6 days delivery · 14 days support</div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-name">Premium</div>
+          <div class="price-amount"><sup>₹</sup>4,999</div>
+          <div class="price-tagline">Stand out with a premium digital experience.</div>
+          <div class="price-for">Best for a premium custom experience</div>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>5–8 pages, advanced custom design</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Advanced glassmorphism &amp; premium animations</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Advanced portfolio, pricing &amp; custom sections</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Advanced SEO &amp; performance optimization</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Open Graph / social preview</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>AI integration optional · Blog/CMS optional</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>3 revisions</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary btn-block">Choose Premium</a>
+          <div class="price-sub">5–8 days delivery · 30 days support</div>
+        </div>
+
+      </div>
+
+      <div class="pricing-note">
+        <h4>What's included — and what isn't</h4>
+        <div class="pricing-note-grid">
+          <div>
+            <p style="font-size:14px; color:var(--ink-soft); margin-bottom:12px;">Package prices cover website development. The following are not automatically included and may be charged separately where required:</p>
+            <ul>
+              <li>Domain &amp; hosting</li>
+              <li>Paid plugins &amp; paid APIs</li>
+              <li>Premium third-party services</li>
+              <li>Premium assets &amp; external subscriptions</li>
+            </ul>
+          </div>
+          <div>
+            <p style="font-size:14px; color:var(--ink-soft); margin-bottom:12px;">A few things worth knowing up front:</p>
+            <ul>
+              <li>Each package has a defined scope and a limited number of revisions</li>
+              <li>Delivery timelines are estimates, based on content/assets arriving on time</li>
+              <li>Additional pages or features can be added for an extra cost</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-avatar" aria-hidden="true"><div class="initials">H</div></div>
+      <div>
+        <span class="section-kicker">About</span>
+        <h2 style="font-size:clamp(26px,3.6vw,36px); margin-bottom:20px;">A developer focused on purposeful digital experiences.</h2>
+        <div class="about-copy">
+          <p>I'm Husain, a developer and technology enthusiast focused on building modern, fast and purposeful digital experiences.</p>
+          <p>I enjoy turning ideas into clean websites and practical digital solutions while continuously exploring web development, AI and emerging technologies.</p>
+          <p>My approach is simple: understand the goal, design with purpose, build with modern technology, and deliver an experience that people enjoy using.</p>
+        </div>
+        <div class="about-blocks">
+          <div class="about-block">
+            <h4>What I Work With</h4>
+            <div class="chip-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>React</span><span>AI</span></div>
+          </div>
+          <div class="about-block">
+            <h4>Currently Exploring</h4>
+            <div class="chip-row"><span>AI</span><span>Web Development</span><span>Automation</span><span>New Tech</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section class="work-with">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">What You Get</span>
+        <h2>Why work with me</h2>
+      </div>
+      <div class="ww-grid">
+        <div class="ww-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+          <h4>Direct communication</h4>
+          <p>You work directly with the person building your site — no account managers, no middlemen.</p>
+        </div>
+        <div class="ww-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
+          <h4>Quality over shortcuts</h4>
+          <p>Every project is built with clean code and real attention to detail, regardless of package size.</p>
+        </div>
+        <div class="ww-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h4>Honest timelines</h4>
+          <p>Clear delivery windows and transparent scope, so there are no surprises along the way.</p>
+        </div>
+        <div class="ww-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12a8 8 0 1 1 8 8"/><path d="M4 12l4-4M4 12l4 4"/></svg>
+          <h4>Support after launch</h4>
+          <p>Every package includes a defined support window for fixes and questions after delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="section-kicker">FAQ</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How much does a website cost?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Packages start at ₹1,999 and go up to ₹4,999 depending on pages, features and design complexity. See the Pricing section for full details on what's included in each.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does a website take?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Most projects are delivered in 3–8 days depending on the package. Timelines are estimates and assume content and assets are provided on time.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you redesign an existing website?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Share your current site and goals, and it can be rebuilt with a modern design and better performance.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Will my website work on mobile?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Every website is built mobile-first and tested across common screen sizes, from small phones to large desktops.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you help with hosting and domain setup?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes, guidance is provided for choosing and setting up hosting and a domain. These are billed separately from the development package.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I update the website later?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Sites are built to be easy to hand over, and ongoing update support is available through the Website Maintenance service.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you provide maintenance?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes, ongoing maintenance and improvements can be arranged after your included support window ends.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can additional features be added later?
+            <span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Additional pages and features can be added after launch for an extra cost, scoped to what you need.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="wrap">
+      <div class="inner">
+        <h2>Have an idea? Let's build it.</h2>
+        <p>Tell us what you're trying to create and let's turn it into a powerful digital experience.</p>
+        <a href="#contact" class="btn btn-primary">Start Your Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <span class="section-kicker">Contact</span>
+        <h2>Let's talk about your project.</h2>
+        <p>Fill out the form with a few details about what you need, or reach out directly on WhatsApp for a quick chat.</p>
+
+        <div class="contact-item">
+          <span class="ci-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+          <a href="mailto:mohdhussainfarooqui0@gammil.com">mohdhussainfarooqui0@gammil.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.17a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92z"/></svg></span>
+          <a href="tel:+917607402350">+91 76074 02350</a>
+        </div>
+
+        <a href="https://web.whatsapp.com/send?phone=917607402350" target="_blank" rel="noopener" class="whatsapp-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.32a8.2 8.2 0 0 1-1.26-4.4c0-4.53 3.7-8.22 8.24-8.22 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.81c0 4.54-3.7 8.26-8.23 8.26z"/></svg>
+          Chat on WhatsApp →
+        </a>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div id="formSuccess" class="form-success">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h4>Inquiry sent</h4>
+          <p>Thanks — your project details have been received. Expect a reply soon.</p>
+        </div>
+
+        <div id="formFields">
+          <div class="form-row">
+            <div class="field" data-field="name">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" placeholder="Your full name" required />
+              <span class="field-error">Please enter your name.</span>
+            </div>
+            <div class="field" data-field="email">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" placeholder="your@email.com" required />
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field" data-field="phone">
+              <label for="f-phone">Phone / WhatsApp</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="+91 00000 00000" required />
+              <span class="field-error">Please enter a phone number.</span>
+            </div>
+            <div class="field" data-field="type">
+              <label for="f-type">Business / Project Type</label>
+              <input id="f-type" name="type" type="text" placeholder="e.g. Restaurant website" required />
+              <span class="field-error">Please tell us your project type.</span>
+            </div>
+          </div>
+
+          <div class="field" data-field="budget">
+            <label for="f-budget">Budget / Package</label>
+            <select id="f-budget" name="budget" required>
+              <option value="">Select a package</option>
+              <option value="starter">Starter — ₹1,999</option>
+              <option value="professional">Professional — ₹2,999</option>
+              <option value="premium">Premium — ₹4,999</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+            <span class="field-error">Please select a package.</span>
+          </div>
+
+          <div class="field" data-field="description">
+            <label for="f-desc">Project Description</label>
+            <textarea id="f-desc" name="description" placeholder="Tell us a bit about what you need..." required></textarea>
+            <span class="field-error">Please add a short description.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Project Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark">H</span>Husain Web Studio</a>
+        <p>Modern websites and digital experiences built for growth.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">Web Applications</a></li>
+          <li><a href="#services">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:mohdhussainfarooqui0@gammil.com">mohdhussainfarooqui0@gammil.com</a></li>
+          <li><a href="tel:+917607402350">+91 76074 02350</a></li>
+          <li><a href="https://husainfaroqui.github.io/Husain-s-bio/" target="_blank" rel="noopener">GitHub Portfolio</a></li>
+          <li><a href="#contact">Send an inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Husain Web Studio. All rights reserved.</span>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Sticky navbar background on scroll
+  const header = document.getElementById('site-header');
+  const onScroll = () => { header.classList.toggle('scrolled', window.scrollY > 12); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive:true });
+
+  // Mobile menu
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuScrim = document.getElementById('menuScrim');
+  function closeMenu(){
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded','false');
+    mobileMenu.classList.remove('open');
+    menuScrim.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function openMenu(){
+    navToggle.classList.add('open');
+    navToggle.setAttribute('aria-expanded','true');
+    mobileMenu.classList.add('open');
+    menuScrim.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  navToggle.addEventListener('click', () => {
+    mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  menuScrim.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    const panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        if(openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-q').setAttribute('aria-expanded','false');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if(isOpen){
+        item.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        panel.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Reveal on scroll for section heads / grids (subtle, non-repetitive)
+  const revealTargets = document.querySelectorAll('.section-head, .service-card, .work-card, .price-card, .ww-card, .why-item, .tl-step');
+  revealTargets.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold:0.12, rootMargin:'0px 0px -40px 0px' });
+  revealTargets.forEach(el => io.observe(el));
+
+  // Contact form validation
+  const form = document.getElementById('contactForm');
+  const formFields = document.getElementById('formFields');
+  const formSuccess = document.getElementById('formSuccess');
+
+  function validateField(field){
+    const input = field.querySelector('input, select, textarea');
+    let valid = true;
+    if(input.hasAttribute('required') && !input.value.trim()){
+      valid = false;
+    }
+    if(valid && input.type === 'email'){
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      valid = re.test(input.value.trim());
+    }
+    field.classList.toggle('error', !valid);
+    return valid;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const fields = form.querySelectorAll('.field');
+    let allValid = true;
+    fields.forEach(f => { if(!validateField(f)) allValid = false; });
+
+    if(!allValid){
+      const firstError = form.querySelector('.field.error input, .field.error select, .field.error textarea');
+      if(firstError) firstError.focus();
+      return;
+    }
+
+    // No backend configured yet — structured so an email/API service can be wired in here.
+    formFields.style.display = 'none';
+    formSuccess.classList.add('show');
+  });
+
+  form.querySelectorAll('.field input, .field select, .field textarea').forEach(input => {
+    input.addEventListener('blur', () => validateField(input.closest('.field')));
+  });
+</script>
+</body>
+</html>
